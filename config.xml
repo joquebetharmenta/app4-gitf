@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <widget xmlns = "http://www.w3.org/ns/widgets"
+ xmlns:gap="http://phonegap.com/ns/1.0"
+ id = "com.phonegap.app4"
+ version= "1.0.0">
+
+<name> app4 Contaminacion  </name>
+
+<description>
+Contaminacion en mi Comunidad
+</description>
+
+<author href="https://build.phonegap.com" email="Joque.cbtis16@gmail.com">
+Joquebeth Silam Cruz Armenta
+</author>
+
+<!--Personaliza la aplicacion y plataforma -->
+<preference name="orientation"   value="default"/>
+<!--<preference name="orientation"   value="portrait"/>
+<preference name="orientation"   value="landscape"/> -->
+<preference name="target-device"   value="universal"/>
+<preference name="fullscreen"   value="true"/>
+<preference name="android-installLocation"   value="auto"/>
+<preference name="permissions"   value="INTERNET"/>
+
+<!--Plugins -->
+<!-- Core plugins -->
+<allow-intent href="https://*/*"/>
+<acces origin="https://*/*"/>
+<allow-intent href="http://*/*"/>
+<acces origin="http://*/*"/>
+<plugin name="cordova-plugin-whitelist" source="npm"/>
+
+
+<!-- <plugin name= "cordova-plugin-geolocation" source="npm" /> -->
+ <!-- Third part plugins -->
+ 
+ <!-- Colocar icono app -->
+<icon src="res/android/mdpi.png" />
+
+</widget>  

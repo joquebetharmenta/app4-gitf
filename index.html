@@ -1,0 +1,315 @@
+﻿<!doctype html>
+
+<!DOCTYPE html>
+<html>
+
+ <head>
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Dia Mundial de la Bicicleta</title>
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app4.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ 
+  <!--grupo JavaScript-->
+  <script src ="js/jquery-1.11.2.min.js"></script>
+  <script src ="js/jquery.mobile-1.4.5.min.js"></script>
+  <!--<script src ="js/acciones.js" type= "text/javascript"></script>-->
+ 
+  <script src ="phonegap.js"></script><!--necesario*/-->
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+ </head>
+
+<body onLoad="MM_preloadImages('imagenes/marcas.jpg','imagenes/mundi2.jpg','imagenes/8.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>La Contaminacion en mi Ciudad</h1>
+  </div> 
+  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Comunidad</h1>
+    <div>
+     <p>Centro de Atlixco</p>
+     <br> 
+    </div>
+    <div>
+    <img src="imagenes/atlixco.png.jpg" width="60%" height="50%">
+    </div>
+   </div>
+  </div>
+  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Ploblema</h1>
+    <div>
+     <p>Te gusta ver esto todos los dias?</p>
+     <br> 
+    </div>
+    <div>
+    <img src="imagenes/26.png.jpg" width="60%" height="50%">
+    </div>
+   </div>
+  </div>
+  <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Definicion</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Tipos de Contaminacion</h2> 
+      </a>      
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Consecuencias</h2>
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Reciclaje</h2>
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>5 Medidas que puedes emplear para combatir la Contaminacion</h2>
+      </a>      
+     </li>      
+    </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/bici_ico.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Cuatro, CAJS</h4>
+  </div>
+ </div>
+  </div>
+ </div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Definicion</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/6.jpg.jpg" alt="6.jpg" title="6.jpg" id="wows1_0"/></li>
+		<li><img src="data1/images/7.jpg.jpg" alt="7.jpg" title="7.jpg" id="wows1_1"/></li>
+		<li><img src="data1/images/8.jpg.jpg" alt="8.jpg" title="8.jpg" id="wows1_2"/></li>
+		<li><img src="data1/images/9.jpg.jpg" alt="9.jpg" title="9.jpg" id="wows1_3"/></li>
+		<li><img src="data1/images/10.jpg.jpg" alt="10.jpg" title="10.jpg" id="wows1_4"/></li>
+		<li><img src="data1/images/11.jpg.jpg" alt="11.jpg" title="11.jpg" id="wows1_5"/></li>
+		<li><img src="data1/images/12.jpg.jpg" alt="12.jpg" title="12.jpg" id="wows1_6"/></li>
+		<li><img src="data1/images/13.jpg.jpg" alt="13.jpg" title="13.jpg" id="wows1_7"/></li>
+		<li><img src="data1/images/14.jpg.jpg" alt="14.jpg" title="14.jpg" id="wows1_8"/></li>
+		<li><img src="data1/images/15.jpg.jpg" alt="15.jpg" title="15.jpg" id="wows1_9"/></li>
+		<li><img src="data1/images/16.jpg.jpg" alt="16.jpg" title="16.jpg" id="wows1_10"/></li>
+		<li><img src="data1/images/17.jpg.jpg" alt="17.jpg" title="17.jpg" id="wows1_11"/></li>
+		<li><img src="data1/images/18.jpg.jpg" alt="18.jpg" title="18.jpg" id="wows1_12"/></li>
+		<li><img src="data1/images/19.jpg.jpg" alt="19.jpg" title="19.jpg" id="wows1_13"/></li>
+		<li><img src="data1/images/20.jpg.jpg" alt="20.jpg" title="20.jpg" id="wows1_14"/></li>
+		<li><img src="data1/images/21.jpg.jpg" alt="21.jpg" title="21.jpg" id="wows1_15"/></li>
+		<li><img src="data1/images/22.jpg.jpg" alt="22.jpg" title="22.jpg" id="wows1_16"/></li>
+		<li><img src="data1/images/23.jpg.jpg" alt="23.jpg" title="23.jpg" id="wows1_17"/></li>
+		<li><img src="data1/images/24.jpg.jpg" alt="24.jpg" title="24.jpg" id="wows1_18"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/25.jpg.jpg" alt="bootstrap carousel" title="25.jpg" id="wows1_19"/></a></li>
+		<li><img src="data1/images/26.jpg.jpg" alt="26.jpg" title="26.jpg" id="wows1_20"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="6.jpg"><span><img src="data1/tooltips/6.jpg.jpg" alt="6.jpg"/>1</span></a>
+		<a href="#" title="7.jpg"><span><img src="data1/tooltips/7.jpg.jpg" alt="7.jpg"/>2</span></a>
+		<a href="#" title="8.jpg"><span><img src="data1/tooltips/8.jpg.jpg" alt="8.jpg"/>3</span></a>
+		<a href="#" title="9.jpg"><span><img src="data1/tooltips/9.jpg.jpg" alt="9.jpg"/>4</span></a>
+		<a href="#" title="10.jpg"><span><img src="data1/tooltips/10.jpg.jpg" alt="10.jpg"/>5</span></a>
+		<a href="#" title="11.jpg"><span><img src="data1/tooltips/11.jpg.jpg" alt="11.jpg"/>6</span></a>
+		<a href="#" title="12.jpg"><span><img src="data1/tooltips/12.jpg.jpg" alt="12.jpg"/>7</span></a>
+		<a href="#" title="13.jpg"><span><img src="data1/tooltips/13.jpg.jpg" alt="13.jpg"/>8</span></a>
+		<a href="#" title="14.jpg"><span><img src="data1/tooltips/14.jpg.jpg" alt="14.jpg"/>9</span></a>
+		<a href="#" title="15.jpg"><span><img src="data1/tooltips/15.jpg.jpg" alt="15.jpg"/>10</span></a>
+		<a href="#" title="16.jpg"><span><img src="data1/tooltips/16.jpg.jpg" alt="16.jpg"/>11</span></a>
+		<a href="#" title="17.jpg"><span><img src="data1/tooltips/17.jpg.jpg" alt="17.jpg"/>12</span></a>
+		<a href="#" title="18.jpg"><span><img src="data1/tooltips/18.jpg.jpg" alt="18.jpg"/>13</span></a>
+		<a href="#" title="19.jpg"><span><img src="data1/tooltips/19.jpg.jpg" alt="19.jpg"/>14</span></a>
+		<a href="#" title="20.jpg"><span><img src="data1/tooltips/20.jpg.jpg" alt="20.jpg"/>15</span></a>
+		<a href="#" title="21.jpg"><span><img src="data1/tooltips/21.jpg.jpg" alt="21.jpg"/>16</span></a>
+		<a href="#" title="22.jpg"><span><img src="data1/tooltips/22.jpg.jpg" alt="22.jpg"/>17</span></a>
+		<a href="#" title="23.jpg"><span><img src="data1/tooltips/23.jpg.jpg" alt="23.jpg"/>18</span></a>
+		<a href="#" title="24.jpg"><span><img src="data1/tooltips/24.jpg.jpg" alt="24.jpg"/>19</span></a>
+		<a href="#" title="25.jpg"><span><img src="data1/tooltips/25.jpg.jpg" alt="25.jpg"/>20</span></a>
+		<a href="#" title="26.jpg"><span><img src="data1/tooltips/26.jpg.jpg" alt="26.jpg"/>21</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    <h2>Podemos entender como contaminación a la alteración del estado natural de un medio, debido a la introducción de algo no perteneciente a él. O que en muchas ocasiones si llega a pertenecer pero no se encuentra en ese medio en grandes proporciones.
+
+Ahora conociendo que es la contaminación, entonces se entiende como contaminación ambiental algo que no pertenece en el ambiente ya sea físico, químico o biológico. De igual manera cuando la combinación de varios agentes se concentran y son nocivos para la salud y el bienestar de la población.</h2>
+   </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/bici_ico.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Cuatro, CAJS</h4>
+  </div>
+ </div>
+
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Tipos de Contaminacion</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>
+     1. Contaminación atmosférica
+    <div><img src="imagenes/1.jpg" width="50%" height="50%"></div>
+     2. Contaminación hídrica
+       <div><img src="imagenes/2.jpg" width="50%" height="50%"></div>
+     3. Contaminación del suelo y del subsuelo
+       <div><img src="imagenes/3.jpg" width="50%" height="50%"></div>
+     4. Contaminación radiactiva
+       <div><img src="imagenes/4.jpg" width="50%" height="50%"></div>
+     5. Contaminación térmica
+       <div><img src="imagenes/5.jpg" width="50%" height="50%" ></div>
+     6. Contaminación visual
+       <div><img src="imagenes/6.jpg" width="50%" height="50%"></div>
+     7. Contaminación lumínica
+       <div><img src="imagenes/7.jpg" width="50%" height="50%"></div>
+     8. Contaminación acústica
+       <div><img src="imagenes/8.jpg" width="50%" height="50%"></div>
+     9. Contaminación electromagnética
+       <div><img src="imagenes/9.jpg" width="50%" height="50%"></div>
+     10. Contaminación alimentaria
+       <div><img src="imagenes/10.jpg" width="50%" height="50%"></div>
+    </h2>
+   </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/bici_ico.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Cuatro, CAJS</h4>
+  </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Consecuencias</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','imagenes/1.jpg',1)"><img src="imagenes/26.png.jpg" width="800" height="500" id="Image35"></a> </h2></div>
+   </div>
+    <h2>Efectos en los seres vivos y el clima</h2>
+     <p>Infortunadamente los efectos y consecuencias de la contaminación ambiental no son pocos, pues además de provenir de una gran cantidad de fuentes ejercidas especialmente por el ser humano, los resultados se evidencian en las condiciones del clima, los animales y plantas y claramente, su causante principal; el hombre.</p>
+
+<h2>Efectos de la contaminación en los seres humanos, el clima, la flora y la fauna</h2>
+
+<p>En países europeos, por ejemplo, cerca de 20.000 personas mueren cada año a causa de la contaminación ambiental. Esto se debe principalmente a la emisión de gases contaminantes tóxicos en el ambiente que causan irritación en los ojos y problemas en las vías respiratorias, además de fatigas, migradas y una serie de enfermedades cardiovasculares. ¿Cómo sucede esto? Pues bien, debido a la emisión, las partículas de humo y polvo que yacen en el aire, ingresan al cuerpo y se alojan en los pulmones, donde empiezan a producir daños graves.</p>
+
+<h2>Consecuencias en el clima y el ambiente</h2>
+<p>La presencia de CO2 en la atmósfera provoca la emisión de concentraciones excesivas que aumentan las posibilidades de aparición del efecto invernadero. Además de las alteraciones que provoca en el clima con los fenómenos metereológicos, es también capaz de impedir la siembra en secciones del suelo donde residen agentes contaminados.<p>
+
+<h2>Contaminación de la flora y la fauna</h2>
+<p>En el caso de las plantas, las consecuencias de la contaminación ambiental pueden reflejarse en el crecimiento y la imposibilidad de adaptación a las condiciones del ambiente, debido a los efectos negativos que produce la contaminación en el aire y el agua, agentes esenciales para sus procesos naturales. Este hecho ha permitido la desaparición de algunas plantas.</p>
+  </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/bici_ico.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Cuatro, CAJS</h4>
+  </div>
+ </div>
+	
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Reciclaje</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>El reciclaje es un proceso cuyo objetivo es convertir desechos en nuevos productos o en materia para su posterior utilización.</h2>
+       <div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image63','','imagenes/8.jpg',1)"><img src="imagenes/6.jpg" width="600" height="373" id="Image63"></a> 
+       </h2></div>
+   </div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/bici_ico.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Cuatro, CAJS</h4>
+  </div>
+ </div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>5 Medidas que puedes emplear para combatir la Contaminacion</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>1.-Recicla</h2>
+    <p> Reutiliza papeles, cartones, cajas, envases de vidrio, etc., para reducir la cantidad de residuos. Procura no pedir bolsas de plástico, sobre todo si lo que vas a llevar te alcanzan en las manos. Otra opción es llevar tus propias bolsas, si lo vas a hacer, de preferencia que sean bolsas de tela o biodegradables.</p>
+    <h2>2.-Humo de los Autos</h2>
+    <p>Afina y da mantenimiento a los automóviles</p>
+    <h2>3.-Contaminacion Visual</h2>
+    <p>Es importante evitar combinaciones fuertes de colores en lugares cerrados como por ejemplo escuelas, instituciones, oficinas y demás.</p>
+    <h2>4.-Montoneras de Basura</h2>
+    <p>No te desesperes y saca la basura de tu casa justo cuando pasa el camion ya que los perros rompen la bolsa y la dejan toda tirada.</p>
+    <h2>5.-excremento de perros</h2>
+    <p>Los amos responsables sacan a pasear a sus perros no solo para que se ejerciten sino para aprovechar que hagan sus necesidades, pero muchos no consideran que deben limpiar los desechos para evitar enfermedades y contaminación.</p>
+    
+    <a href="http://www.atl.org.mx/index.php?option=com_content&view=article&id=3586:los-contaminantes-y-el-sistema-atoyacnexapa-en-atlixco&catid=114:contaminacion-del-agua&Itemid=576" target="_self"> Ir a la página en internet relacionada al tema </a>
+
+    <div><img src="imagenes/11.jpg" width="50%" height="50%"></div></div>
+  </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/bici_ico.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Cuatro, CAJS</h4>
+ </div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section --></div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   
+
+</body>
+</html>
+        
+
+  
+
+
